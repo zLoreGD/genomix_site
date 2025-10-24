@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('./fonts/Benzin-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@keyframes bounceFade {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+  }
+}
+
+.arrow-bounce {
+  animation: bounceFade 2s infinite ease-in-out;
+}
+@keyframes scroll-loop-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes scroll-loop-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+
+
+.animate-scroll-loop-l {
+  animation: scroll-loop-left 50s linear infinite;
+}
+.animate-scroll-loop-r {
+  animation: scroll-loop-right 50s linear infinite;
+}
+:root { --font-display: "Benzin", sans-serif; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
